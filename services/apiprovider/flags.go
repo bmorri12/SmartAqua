@@ -6,7 +6,7 @@ import (
 
 const (
 	flagRabbitHost    = "rabbithost"
-	defaultRabbitHost = "amqp://guest:guest@localhost:5672/"
+	defaultRabbitHost = "amqp://guest:guest@127.0.0.1:5672/"
 )
 
 var (

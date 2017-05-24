@@ -22,7 +22,7 @@ var schemePorts = map[string]int{
 
 var defaultURI = URI{
 	Scheme:   "amqp",
-	Host:     "localhost",
+	Host:     "127.0.0.1",
 	Port:     5672,
 	Username: "guest",
 	Password: "guest",
