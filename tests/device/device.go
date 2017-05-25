@@ -189,11 +189,12 @@ func (d *Device) reportStatus(client MQTT.Client) {
 		return
 	}
 
-	client.Publish("s", payload)
+	client.Publish("s", 0, false, payload)
+
 
 }
 
-func (d *Device) reportEvent(client *MQTT.Client) {
+func (d *Device) reportEvent(client MQTT.Client) {
 	for {
 		time.Sleep(3 * time.Second)
 
