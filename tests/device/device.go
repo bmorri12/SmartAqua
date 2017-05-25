@@ -5,7 +5,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	MQTT "git.eclipse.org/gitroot/paho/org.eclipse.paho.mqtt.golang.git"
+	MQTT "github.com/eclipse/paho.mqtt.golang"
 	"github.com/PandoCloud/pando-cloud/pkg/protocol"
 	"github.com/PandoCloud/pando-cloud/pkg/tlv"
 	"log"
