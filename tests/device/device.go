@@ -222,7 +222,7 @@ func (d *Device) reportEvent(client MQTT.Client) {
 	}
 }
 
-func (d *Device) statusHandler(client *MQTT.Client, msg MQTT.Message) {
+func (d *Device) statusHandler(client MQTT.Client, msg MQTT.Message) {
 	status := protocol.Data{}
 
 	err := status.UnMarshal(msg.Payload())
@@ -240,7 +240,7 @@ func (d *Device) statusHandler(client *MQTT.Client, msg MQTT.Message) {
 	}
 }
 
-func (d *Device) commandHandler(client *MQTT.Client, msg MQTT.Message) {
+func (d *Device) commandHandler(client MQTT.Client, msg MQTT.Message) {
 	cmd := protocol.Command{}
 
 	err := cmd.UnMarshal(msg.Payload())
@@ -257,7 +257,7 @@ func (d *Device) commandHandler(client *MQTT.Client, msg MQTT.Message) {
 	}
 }
 
-func (d *Device) messageHandler(client *MQTT.Client, msg MQTT.Message) {
+func (d *Device) messageHandler(client MQTT.Client, msg MQTT.Message) {
 	fmt.Printf("TOPIC: %s\n", msg.Topic())
 	fmt.Printf("MSG: %x\n", msg.Payload())
 	msgtype := msg.Topic()
