@@ -1,7 +1,7 @@
 FROM golang:1.5.2
 
-MAINTAINER razr razr.china@gmail.com
+MAINTAINER xfocus xfocus3@gmail.com
 
-ADD . /go/src/github.com/PandoCloud/pando-cloud
+ADD . /go/src/github.com/bmorri12/SmartAqu
 
-RUN go get github.com/PandoCloud/pando-cloud/...
+RUN go get github.com/bmorri12/SmartAqu/...
