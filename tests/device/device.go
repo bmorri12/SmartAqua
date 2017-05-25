@@ -155,7 +155,7 @@ func (d *Device) DoLogin() error {
 	return nil
 }
 
-func (d *Device) reportStatus(client *MQTT.Client) {
+func (d *Device) reportStatus(client MQTT.Client) {
 
 	payloadHead := protocol.DataHead{
 		Flag:      0,
