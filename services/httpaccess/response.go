@@ -1,4 +1,4 @@
-bmorri12/SmartAquapackage main
+package main
 
 // common response fields
 type Common struct {
