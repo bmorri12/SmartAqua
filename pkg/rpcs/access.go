@@ -1,8 +1,8 @@
 package rpcs
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/protocol"
-	"github.com/PandoCloud/pando-cloud/pkg/tlv"
+	"github.com/bmorri12/SmartAqua/pkg/protocol"
+	"github.com/bmorri12/SmartAqua/pkg/tlv"
 )
 
 type ArgsSetStatus struct {

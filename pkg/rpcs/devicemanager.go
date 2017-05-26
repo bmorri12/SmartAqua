@@ -1,7 +1,7 @@
 package rpcs
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/online"
+	"github.com/bmorri12/SmartAqua/pkg/online"
 )
 
 type ArgsGenerateDeviceAccessToken ArgsDeviceId

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/models"
-	"github.com/PandoCloud/pando-cloud/pkg/mysql"
-	"github.com/PandoCloud/pando-cloud/pkg/rpcs"
+	"github.com/bmorri12/SmartAqua/pkg/models"
+	"github.com/bmorri12/SmartAqua/pkg/mysql"
+	"github.com/bmorri12/SmartAqua/pkg/rpcs"
 	"testing"
 )
 

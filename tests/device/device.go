@@ -5,9 +5,9 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
+	"github.com/bmorri12/SmartAqua/pkg/protocol"
+	"github.com/bmorri12/SmartAqua/pkg/tlv"
 	MQTT "github.com/eclipse/paho.mqtt.golang"
-	"github.com/PandoCloud/pando-cloud/pkg/protocol"
-	"github.com/PandoCloud/pando-cloud/pkg/tlv"
 	"log"
 	"os"
 	"time"
@@ -190,7 +190,6 @@ func (d *Device) reportStatus(client MQTT.Client) {
 	}
 
 	client.Publish("s", 0, false, payload)
-
 
 }
 

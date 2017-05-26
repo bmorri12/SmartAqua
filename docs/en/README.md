@@ -1,4 +1,4 @@
-# pando-cloud  [![Build Status](https://travis-ci.org/PandoCloud/pando-cloud.svg)](https://travis-ci.org/PandoCloud/pando-cloud)  [![Coverage Status](https://coveralls.io/repos/PandoCloud/pando-cloud/badge.svg?branch=master&service=github)](https://coveralls.io/github/PandoCloud/pando-cloud?branch=master)
+# pando-cloud  [![Build Status](https://travis-ci.org/bmorri12/SmartAqua.svg)](https://travis-ci.org/bmorri12/SmartAqua)  [![Coverage Status](https://coveralls.io/repos/bmorri12/SmartAqua/badge.svg?branch=master&service=github)](https://coveralls.io/github/bmorri12/SmartAqua?branch=master)
 
 Pando Cloud is the cloud part of Pando IoT solution.
 

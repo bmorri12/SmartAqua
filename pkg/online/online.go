@@ -3,8 +3,8 @@ package online
 
 import (
 	"errors"
-	"github.com/PandoCloud/pando-cloud/pkg/redispool"
-	"github.com/PandoCloud/pando-cloud/pkg/serializer"
+	"github.com/bmorri12/SmartAqua/pkg/redispool"
+	"github.com/bmorri12/SmartAqua/pkg/serializer"
 	"github.com/garyburd/redigo/redis"
 	"strconv"
 )

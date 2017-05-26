@@ -11,7 +11,7 @@ Docker是跨平台的容器管理工具，在Linux，OSX以及Windows上运行�
 我们提供了脚本通过docker一键安装和启动平台依赖的环境如`mysql mongodb redis etd`等。下载并执行脚本：
 
 ```
-wget https://raw.githubusercontent.com/PandoCloud/pando-cloud/master/build/local/docker/base.sh
+wget https://raw.githubusercontent.com/bmorri12/SmartAqua/master/build/local/docker/base.sh
 sudo sh -x base.sh
 ```
 
@@ -38,7 +38,7 @@ sudo docker run --link mysql mysql sh -c 'exec mysql -hmysql -uroot -e"CREATE DA
 我们提供了脚本在单机环境启动平台。可以不下载代码库，直接下载脚本：
 
 ```sh
-wget https://raw.githubusercontent.com/PandoCloud/pando-cloud/master/build/local/docker/run.sh
+wget https://raw.githubusercontent.com/bmorri12/SmartAqua/master/build/local/docker/run.sh
 sudo sh -x run.sh
 ```
 
@@ -57,7 +57,7 @@ sudo docker ps -a
 通过容器启动`pdcfg`配置工具，并导入配置文件到容器，对平台进行基本配置：
 
 ```sh
-sudo docker run -it --name pdcfg -v `echo $(pwd)`:/root --link etcd pandocloud/pando-cloud pdcfg -etcd http://etcd:2379
+sudo docker run -it --name pdcfg -v `echo $(pwd)`:/root --link etcd bmorri12/SmartAqua pdcfg -etcd http://etcd:2379
 ```
 
 提示：
@@ -68,5 +68,5 @@ sudo docker run -it --name pdcfg -v `echo $(pwd)`:/root --link etcd pandocloud/p
 通过容器启动设备登陆部署的本地云平台进行测试(请使用自己配置好的product key)：
 
 ```sh
-sudo docker run -it --name device --net host pandocloud/pando-cloud device -productkey=59362a15e27a0649149ff75cee1e7938f78c7cd2bb319f252694f01b7351a1
+sudo docker run -it --name device --net host bmorri12/SmartAqua device -productkey=59362a15e27a0649149ff75cee1e7938f78c7cd2bb319f252694f01b7351a1
 ```

@@ -1,9 +1,9 @@
 package mongo
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/protocol"
-	"github.com/PandoCloud/pando-cloud/pkg/rpcs"
-	"github.com/PandoCloud/pando-cloud/pkg/tlv"
+	"github.com/bmorri12/SmartAqua/pkg/protocol"
+	"github.com/bmorri12/SmartAqua/pkg/rpcs"
+	"github.com/bmorri12/SmartAqua/pkg/tlv"
 	"reflect"
 	"testing"
 	"time"

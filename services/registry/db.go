@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/PandoCloud/pando-cloud/pkg/mysql"
+	"github.com/bmorri12/SmartAqua/pkg/mysql"
 	"github.com/jinzhu/gorm"
 )
 

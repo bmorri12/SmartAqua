@@ -17,6 +17,6 @@ before_script:
   - $HOME/gopath/bin/etcd &
   - echo 'CREATE DATABASE PandoCloud' | mysql -uroot
 script:
-  - cd $HOME/gopath/src/github.com/PandoCloud/pando-cloud/
+  - cd $HOME/gopath/src/github.com/bmorri12/SmartAqua/
   - ./unit_test.sh
   - $HOME/gopath/bin/goveralls -coverprofile=gover.coverprofile -service=travis-ci

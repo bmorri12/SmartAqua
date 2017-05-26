@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/server"
+	"github.com/bmorri12/SmartAqua/pkg/server"
 	"github.com/go-martini/martini"
 	"github.com/martini-contrib/render"
 )

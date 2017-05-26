@@ -3,8 +3,8 @@ package rule
 
 import (
 	"fmt"
-	"github.com/PandoCloud/pando-cloud/pkg/models"
-	"github.com/PandoCloud/pando-cloud/pkg/server"
+	"github.com/bmorri12/SmartAqua/pkg/models"
+	"github.com/bmorri12/SmartAqua/pkg/server"
 	"github.com/robfig/cron"
 	"time"
 )

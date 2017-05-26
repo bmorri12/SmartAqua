@@ -1,4 +1,4 @@
-# pando-cloud  [![Build Status](https://travis-ci.org/PandoCloud/pando-cloud.svg)](https://travis-ci.org/PandoCloud/pando-cloud)  [![Coverage Status](https://coveralls.io/repos/PandoCloud/pando-cloud/badge.svg?branch=master&service=github)](https://coveralls.io/github/PandoCloud/pando-cloud?branch=master) 
+# pando-cloud  [![Build Status](https://travis-ci.org/bmorri12/SmartAqua.svg)](https://travis-ci.org/bmorri12/SmartAqua)  [![Coverage Status](https://coveralls.io/repos/bmorri12/SmartAqua/badge.svg?branch=master&service=github)](https://coveralls.io/github/bmorri12/SmartAqua?branch=master) 
 
 PandoCloud是Pando物联网解决方案的云平台部分。
 
@@ -87,6 +87,6 @@ Pando的目的是为了提供一套可应用于实际生产环境的的物联网
 ## 贡献项目
 pando物联网平台是完全开源免费的物联网解决方案，欢迎大家以各种形式贡献项目。
 
-* **反馈问题**：我们鼓励通过[提交Issue](https://github.com/PandoCloud/pando-cloud/issues/new)的方式反馈您在使用中遇到的疑问或问题。
-* **提出建议**：同样，可以通过[提交Issue](https://github.com/PandoCloud/pando-cloud/issues/new)向我们提供改进意见，同时可以通过加入我们的讨论QQ群（488074716）或者参加我们主办的线下物联网技术沙龙一起讨论。
+* **反馈问题**：我们鼓励通过[提交Issue](https://github.com/bmorri12/SmartAqua/issues/new)的方式反馈您在使用中遇到的疑问或问题。
+* **提出建议**：同样，可以通过[提交Issue](https://github.com/bmorri12/SmartAqua/issues/new)向我们提供改进意见，同时可以通过加入我们的讨论QQ群（488074716）或者参加我们主办的线下物联网技术沙龙一起讨论。
 * **贡献代码**：非常欢迎有能力的朋友一起参与Pando物联网平台的开发，一起构建开放、免费、开源的物联网解决方案。请按照[贡献流程](./docs/zh-cn/contribution/work-flow.md)参与项目开发。

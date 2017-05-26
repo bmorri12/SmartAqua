@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/PandoCloud/pando-cloud/pkg/protocol"
-	"github.com/PandoCloud/pando-cloud/pkg/tlv"
+	"github.com/bmorri12/SmartAqua/pkg/protocol"
+	"github.com/bmorri12/SmartAqua/pkg/tlv"
 )
 
 type CommandOrEventParam struct {

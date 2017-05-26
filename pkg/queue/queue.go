@@ -3,7 +3,7 @@ package queue
 
 import (
 	"errors"
-	"github.com/PandoCloud/pando-cloud/pkg/serializer"
+	"github.com/bmorri12/SmartAqua/pkg/serializer"
 	"github.com/streadway/amqp"
 )
 

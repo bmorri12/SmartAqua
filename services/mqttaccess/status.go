@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/protocol"
+	"github.com/bmorri12/SmartAqua/pkg/protocol"
 )
 
 var StatusChan map[uint64]chan *protocol.Data

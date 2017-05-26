@@ -2,7 +2,7 @@
 package mysql
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/models"
+	"github.com/bmorri12/SmartAqua/pkg/models"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 )

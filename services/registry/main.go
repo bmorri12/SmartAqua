@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/mysql"
-	"github.com/PandoCloud/pando-cloud/pkg/server"
+	"github.com/bmorri12/SmartAqua/pkg/mysql"
+	"github.com/bmorri12/SmartAqua/pkg/server"
 )
 
 func main() {

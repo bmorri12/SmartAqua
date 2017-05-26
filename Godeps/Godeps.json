@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/PandoCloud/pando-cloud",
+	"ImportPath": "github.com/bmorri12/SmartAqua",
 	"GoVersion": "go1.5.1",
 	"Packages": [
 		"./..."

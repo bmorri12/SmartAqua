@@ -2,10 +2,10 @@ package main
 
 import (
 	"errors"
-	"github.com/PandoCloud/pando-cloud/pkg/models"
-	"github.com/PandoCloud/pando-cloud/pkg/productconfig"
-	"github.com/PandoCloud/pando-cloud/pkg/rpcs"
-	"github.com/PandoCloud/pando-cloud/pkg/server"
+	"github.com/bmorri12/SmartAqua/pkg/models"
+	"github.com/bmorri12/SmartAqua/pkg/productconfig"
+	"github.com/bmorri12/SmartAqua/pkg/rpcs"
+	"github.com/bmorri12/SmartAqua/pkg/server"
 	"github.com/go-martini/martini"
 	"github.com/martini-contrib/render"
 	"net/http"

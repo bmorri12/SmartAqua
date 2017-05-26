@@ -3,8 +3,8 @@ package mqtt
 import (
 	"encoding/hex"
 	"errors"
-	"github.com/PandoCloud/pando-cloud/pkg/rpcs"
-	"github.com/PandoCloud/pando-cloud/pkg/server"
+	"github.com/bmorri12/SmartAqua/pkg/rpcs"
+	"github.com/bmorri12/SmartAqua/pkg/server"
 	"net"
 	"time"
 )

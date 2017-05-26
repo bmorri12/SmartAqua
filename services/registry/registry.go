@@ -4,9 +4,9 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/PandoCloud/pando-cloud/pkg/generator"
-	"github.com/PandoCloud/pando-cloud/pkg/models"
-	"github.com/PandoCloud/pando-cloud/pkg/rpcs"
+	"github.com/bmorri12/SmartAqua/pkg/generator"
+	"github.com/bmorri12/SmartAqua/pkg/models"
+	"github.com/bmorri12/SmartAqua/pkg/rpcs"
 )
 
 const (

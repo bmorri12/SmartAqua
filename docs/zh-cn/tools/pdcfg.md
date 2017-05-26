@@ -11,7 +11,7 @@ pdcfg是对平台进行配置的小工具。
 
 ## 安装
 ```sh
-go install github.com/PandoCloud/pando-cloud/tools/pdcfg
+go install github.com/bmorri12/SmartAqua/tools/pdcfg
 ```
 
 ## 使用

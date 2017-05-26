@@ -2,8 +2,8 @@ package token
 
 import (
 	"errors"
-	"github.com/PandoCloud/pando-cloud/pkg/generator"
-	"github.com/PandoCloud/pando-cloud/pkg/redispool"
+	"github.com/bmorri12/SmartAqua/pkg/generator"
+	"github.com/bmorri12/SmartAqua/pkg/redispool"
 	"reflect"
 	"strconv"
 )

@@ -12,7 +12,7 @@ Ubuntu是基于Linux的操作系统发行版。
 ## 说明
 如果不想自己编译二进制程序，可以使用我们预先编译好的二进制包。
 
-所有版本的二进制包在**[GitHub Release](https://github.com/PandoCloud/pando-cloud/releases)**或者[百度网盘（国内推荐）](http://pan.baidu.com/s/1hqLlLFA)发布和维护，选择适合自己系统的二进制包下载并解压，**不再需要编译**，直接参考[部署](#部署)说明进行部署。
+所有版本的二进制包在**[GitHub Release](https://github.com/bmorri12/SmartAqua/releases)**或者[百度网盘（国内推荐）](http://pan.baidu.com/s/1hqLlLFA)发布和维护，选择适合自己系统的二进制包下载并解压，**不再需要编译**，直接参考[部署](#部署)说明进行部署。
 
 ## 编译
 
@@ -32,10 +32,10 @@ sudo apt-get install bzr -y
 首先通过`go get`命令下载并编译pando cloud代码：
 
 ```sh
-go get -u github.com/PandoCloud/pando-cloud
+go get -u github.com/bmorri12/SmartAqua
 ```
 
-源代码就下载在Go工作目录的`$GOPATH/src/github.com/PandoCloud/pando-cloud`下。
+源代码就下载在Go工作目录的`$GOPATH/src/github.com/bmorri12/SmartAqua`下。
 
 > 下载完成后可能会提示类似`no buildable Go source files`错误，是正常的，请无视。
 
@@ -43,7 +43,7 @@ go get -u github.com/PandoCloud/pando-cloud
 进入目录，执行对应的编译脚本：
 
 ```sh
-cd $GOPATH/src/github.com/PandoCloud/pando-cloud
+cd $GOPATH/src/github.com/bmorri12/SmartAqua
 sh -x ./build/local/linux/install.sh
 ```
 
@@ -136,7 +136,7 @@ etcd &
 启动服务前请确保步骤1中依赖的服务已经成功安装并启动
 
 ```sh
-cd $GOPATH/src/github.com/PandoCloud/pando-cloud
+cd $GOPATH/src/github.com/bmorri12/SmartAqua
 sudo sh -x ./build/local/linux/run.sh
 ```
 
@@ -157,7 +157,7 @@ ps aux | grep $GOPATH/bin
 ### 5. 测试
 运行测试程序`device`，可以模拟一个普通设备接入云平台，进行测试：
 ```sh
-go install github.com/PandoCloud/pando-cloud/tests/device
+go install github.com/bmorri12/SmartAqua/tests/device
 $GOPATH/bin/device
 ```
 

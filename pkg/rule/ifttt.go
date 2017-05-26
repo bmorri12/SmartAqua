@@ -2,9 +2,9 @@
 package rule
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/models"
-	"github.com/PandoCloud/pando-cloud/pkg/productconfig"
-	"github.com/PandoCloud/pando-cloud/pkg/server"
+	"github.com/bmorri12/SmartAqua/pkg/models"
+	"github.com/bmorri12/SmartAqua/pkg/productconfig"
+	"github.com/bmorri12/SmartAqua/pkg/server"
 )
 
 type Ifttt struct{}

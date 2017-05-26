@@ -1,7 +1,7 @@
 package protocol
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/tlv"
+	"github.com/bmorri12/SmartAqua/pkg/tlv"
 	"reflect"
 	"testing"
 	"time"

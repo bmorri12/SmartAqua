@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/PandoCloud/pando-cloud/pkg/online"
-	"github.com/PandoCloud/pando-cloud/pkg/rpcs"
-	"github.com/PandoCloud/pando-cloud/pkg/token"
+	"github.com/bmorri12/SmartAqua/pkg/online"
+	"github.com/bmorri12/SmartAqua/pkg/rpcs"
+	"github.com/bmorri12/SmartAqua/pkg/token"
 )
 
 type DeviceManager struct {
