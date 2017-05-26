@@ -9,7 +9,10 @@ const (
 	defaultMongoHost = "localhost"
 
 	flagRabbitHost    = "rabbithost"
-	defaultRabbitHost = "amqp://guest:guest@127.0.0.1:5672/"
+	//defaultRabbitHost = "amqp://guest:guest@127.0.0.1:5672/"
+		defaultRabbitHost = "amqp://tgdcxdtv:gb0Robr4fcp2@m20.cloudmqtt.com:13595/"
+	
+
 )
 
 var (
