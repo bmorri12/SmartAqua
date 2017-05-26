@@ -6,6 +6,7 @@ import (
 	"github.com/PandoCloud/pando-cloud/pkg/rpcs"
 	"github.com/PandoCloud/pando-cloud/pkg/rule"
 	"github.com/PandoCloud/pando-cloud/pkg/server"
+	"fmt"
 )
 
 const (
@@ -27,31 +28,31 @@ type Controller struct {
 func NewController(mongohost string, rabbithost string) (*Controller, error) {
 	cmdr, err := mongo.NewRecorder(mongohost, mongoSetName, "commands")
 	if err != nil {
-		err+=" commands"
+		fmt.Errorf("error commands  (%v)", err) 
 		return nil, err
 	}
 
 	ever, err := mongo.NewRecorder(mongohost, mongoSetName, "events")
 	if err != nil {
-				err+=" events"
-		return nil, err
+		fmt.Errorf("error events  (%v)", err) 
+				return nil, err
 	}
 
 	datar, err := mongo.NewRecorder(mongohost, mongoSetName, "datas")
 	if err != nil {
-						err+=" datas"
+		fmt.Errorf("error datas  (%v)", err) 
 		return nil, err
 	}
 
 	eq, err := queue.New(rabbithost, topicEvents)
 	if err != nil {
-								err+=" topicEvents rabbit"
+		fmt.Errorf("error rabbithost topicEvents  (%v)", err) 
 		return nil, err
 	}
 
 	sq, err := queue.New(rabbithost, topicStatus)
 	if err != nil {
-										err+=" topicStatus rabbit"
+		fmt.Errorf("error rabbithost topicStatus  (%v)", err) 
 		return nil, err
 	}
 
