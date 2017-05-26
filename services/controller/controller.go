@@ -27,26 +27,31 @@ type Controller struct {
 func NewController(mongohost string, rabbithost string) (*Controller, error) {
 	cmdr, err := mongo.NewRecorder(mongohost, mongoSetName, "commands")
 	if err != nil {
+		err+=" commands"
 		return nil, err
 	}
 
 	ever, err := mongo.NewRecorder(mongohost, mongoSetName, "events")
 	if err != nil {
+				err+=" events"
 		return nil, err
 	}
 
 	datar, err := mongo.NewRecorder(mongohost, mongoSetName, "datas")
 	if err != nil {
+						err+=" datas"
 		return nil, err
 	}
 
 	eq, err := queue.New(rabbithost, topicEvents)
 	if err != nil {
+								err+=" topicEvents rabbit"
 		return nil, err
 	}
 
 	sq, err := queue.New(rabbithost, topicStatus)
 	if err != nil {
+										err+=" topicStatus rabbit"
 		return nil, err
 	}
 
