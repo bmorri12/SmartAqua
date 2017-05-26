@@ -28,32 +28,32 @@ type Controller struct {
 func NewController(mongohost string, rabbithost string) (*Controller, error) {
 	cmdr, err := mongo.NewRecorder(mongohost, mongoSetName, "commands")
 	if err != nil {
-		fmt.Errorf("error commands  (%v)", err) 
-		return nil, err
+		
+		return nil, fmt.Errorf("error commands  (%v)", err) 
 	}
 
 	ever, err := mongo.NewRecorder(mongohost, mongoSetName, "events")
 	if err != nil {
-		fmt.Errorf("error events  (%v)", err) 
-				return nil, err
+		 
+				return nil, fmt.Errorf("error events  (%v)", err)
 	}
 
 	datar, err := mongo.NewRecorder(mongohost, mongoSetName, "datas")
 	if err != nil {
-		fmt.Errorf("error datas  (%v)", err) 
-		return nil, err
+		
+		return nil, fmt.Errorf("error datas  (%v)", err) 
 	}
 
 	eq, err := queue.New(rabbithost, topicEvents)
 	if err != nil {
-		fmt.Errorf("error rabbithost topicEvents  (%v)", err) 
-		return nil, err
+		
+		return nil, fmt.Errorf("error rabbithost topicEvents  (%v)", err) 
 	}
 
 	sq, err := queue.New(rabbithost, topicStatus)
 	if err != nil {
-		fmt.Errorf("error rabbithost topicStatus  (%v)", err) 
-		return nil, err
+		
+		return nil, fmt.Errorf("error rabbithost topicStatus  (%v)", err) 
 	}
 
 	// timer
