@@ -16,10 +16,10 @@ echo "starting controller..."
 docker run -d --name controller --link etcd --link mongo xfocus/smartaquaculture controller -etcd http://etcd:2379 -mongohost mongo -rpchost internal:20032 -loglevel debug
 
 echo "starting mqttaccess..."
-docker run -d --name mqttaccess -p 1883:1883 --link etcd xfocus/smartaquaculture mqttaccess -etcd http://etcd:2379 -tcphost :1883 -usetls -keyfile /go/src/github.com/xfocus/smartaquaculture/pkg/server/testdata/key.pem -cafile /go/src/github.com/xfocus/smartaquaculture/pkg/server/testdata/cert.pem -rpchost internal:20030 -loglevel debug
+docker run -d --name mqttaccess -p 1883:1883 --link etcd xfocus/smartaquaculture mqttaccess -etcd http://etcd:2379 -tcphost :1883 -usetls -keyfile /go/src/github.com/bmorri12/SmartAqua/pkg/server/testdata/key.pem -cafile /go/src/github.com/bmorri12/SmartAqua/pkg/server/testdata/cert.pem -rpchost internal:20030 -loglevel debug
 
 echo "starting httpaccess..."
-docker run -d --name httpaccess -p 443:443 --link etcd --link redis xfocus/smartaquaculture httpaccess -etcd http://etcd:2379 -httphost :443 -redishost redis:6379 -usehttps -keyfile /go/src/github.com/xfocus/smartaquaculture/pkg/server/testdata/key.pem -cafile /go/src/github.com/xfocus/smartaquaculture/pkg/server/testdata/cert.pem -loglevel debug
+docker run -d --name httpaccess -p 443:443 --link etcd --link redis xfocus/smartaquaculture httpaccess -etcd http://etcd:2379 -httphost :443 -redishost redis:6379 -usehttps -keyfile /go/src/github.com/bmorri12/SmartAqua/pkg/server/testdata/key.pem -cafile /go/src/github.com/bmorri12/SmartAqua/pkg/server/testdata/cert.pem -loglevel debug
 
 echo "starting apiprovider..."
 docker run -d --name apiprovider -p 8888:8888 --link etcd xfocus/smartaquaculture apiprovider -etcd http://etcd:2379 -httphost :8888 -loglevel debug
