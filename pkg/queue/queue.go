@@ -21,12 +21,12 @@ type Queue struct {
 func New(rabbithost string, name string) (*Queue, error) {
 	conn, err := amqp.Dial(rabbithost)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("error connection new queue  (%v)", err)
 	}
 
 	ch, err := conn.Channel()
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("error channel new queue  (%v)", err)
 	}
 
 	queue, err := ch.QueueDeclare(
