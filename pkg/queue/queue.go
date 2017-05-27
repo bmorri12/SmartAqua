@@ -3,6 +3,7 @@ package queue
 
 import (
 	"errors"
+	"fmt"
 	"github.com/bmorri12/SmartAqua/pkg/serializer"
 	"github.com/streadway/amqp"
 )
