@@ -15,7 +15,7 @@ const (
 
 	defaultDBHost = "localhost"
 	defaultDBPort = "3306"
-	defaultDBName = "PandoCloud"
+	defaultDBName = "SeaWater"
 	defaultDBUser = "root"
 )
 

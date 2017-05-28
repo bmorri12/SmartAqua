@@ -27,8 +27,8 @@ func MigrateDatabase(dbhost, dbport, dbname, dbuser, dbpass string) error {
 	db.SingularTable(true)
 	db.LogMode(false)
 
-	db.DB().Query("CREATE DATABASE PandoCloud; ")
-	db.DB().Query("USE PandoCloud;")
+	db.DB().Query("CREATE DATABASE SeaWater; ")
+	db.DB().Query("USE SeaWater;")
 	// Automating Migration
 	db.Set("gorm:table_options", "ENGINE=MyISAM").AutoMigrate(
 		&models.Device{},

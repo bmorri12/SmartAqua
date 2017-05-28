@@ -15,7 +15,7 @@ install:
   - go get ./... 
 before_script:
   - $HOME/gopath/bin/etcd &
-  - echo 'CREATE DATABASE PandoCloud' | mysql -uroot
+  - echo 'CREATE DATABASE SeaWater' | mysql -uroot
 script:
   - cd $HOME/gopath/src/github.com/bmorri12/SmartAqua/
   - ./unit_test.sh
