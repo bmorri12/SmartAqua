@@ -10,7 +10,7 @@ import (
 )
 
 func TestRecorder(t *testing.T) {
-	r, err := NewRecorder("localhost", "pandocloud", "commands")
+	r, err := NewRecorder("localhost", "seawater", "commands")
 	if err != nil {
 		t.Fatal(err)
 	}

@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	mongoSetName = "pandocloud"
+	mongoSetName = "seawater"
 	topicEvents  = "events"
 	topicStatus  = "status"
 )
