@@ -35,16 +35,15 @@ func renderError(code int, err error) Common {
 	return result
 }
 func GetDevicesList(r render.Renderer) error {
-	
-		
-		err := server.RPCCallByName("registry", "Registry.GetDevices", 0, &devis)
+		devis := []*models.Device
+		err := server.RPCCallByName("registry", "Registry.GetDevices", 0, devis)
 		if err != nil {
 			server.Log.Errorf("get Devices error : %v", err)
 		}
 
 		result := DeviceInfoResponse{
 		Data: DeviceInfoData{
-			devis []*models.Application
+			devis : devis
 		},
 	}
 	r.JSON(http.StatusOK, result)
