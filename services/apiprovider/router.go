@@ -10,6 +10,9 @@ func route(m *martini.ClassicMartini) {
 	// find a device by key
 	m.Get("/application/v1/device/info", GetDeviceInfoByKey)
 
+	// list all devices
+	m.Get("/application/v1/devices", GetDevicesList)
+
 	// find a device by identifier
 	m.Get("/application/v1/devices/:identifier/info", ApplicationAuthOnDeviceIdentifer, GetDeviceInfoByIdentifier)
 

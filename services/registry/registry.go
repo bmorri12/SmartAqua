@@ -250,6 +250,16 @@ func (r *Registry) FindVendor(id int32, reply *models.Vendor) error {
 	return nil
 }
 
+// GetDevices will get all Devices in the platform.
+func (r *Registry) GetDevices(noarg int, reply *[]models.Vendor) error {
+	db, err := getDB()
+	if err != nil {
+		return err
+	}
+
+	return db.Find(reply).Error
+}
+
 // GetVendors will get all vendors in the platform.
 func (r *Registry) GetVendors(noarg int, reply *[]models.Vendor) error {
 	db, err := getDB()

@@ -34,6 +34,44 @@ func renderError(code int, err error) Common {
 	server.Log.Error(err.Error())
 	return result
 }
+func GetDevicesList(r render.Renderer) error {
+	
+		
+		err := server.RPCCallByName("registry", "Registry.GetDevices", 0, &devis)
+		if err != nil {
+			server.Log.Errorf("get Devices error : %v", err)
+		}
+
+		result := DeviceInfoResponse{
+		Data: DeviceInfoData{
+			devis []*models.Application
+		},
+	}
+	r.JSON(http.StatusOK, result)
+	return
+}
+
+func GetDevicesList(params martini.Params, req *http.Request, r render.Render) {
+	key := req.URL.Query().Get("device_key")
+	server.Log.Printf("ACTION GetDevicesList, key:: %v", key)
+	device := &models.Device{}
+	err := server.RPCCallByName("registry", "Registry.ValidateDevice", key, device)
+	if err != nil {
+		r.JSON(http.StatusOK, renderError(ErrDeviceNotFound, err))
+		return
+	}
+
+	result := DeviceInfoResponse{
+		Data: DeviceInfoData{
+			Identifier:  device.DeviceIdentifier,
+			Name:        device.DeviceName,
+			Description: device.DeviceDescription,
+			Version:     device.DeviceVersion,
+		},
+	}
+	r.JSON(http.StatusOK, result)
+	return
+}
 
 func GetDeviceInfoByKey(params martini.Params, req *http.Request, r render.Render) {
 	key := req.URL.Query().Get("device_key")
